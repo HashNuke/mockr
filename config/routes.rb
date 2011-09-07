@@ -5,10 +5,10 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :projects, :member => {:mock_list_selector => :get}
   
   map.devise_for :users
-  # map.resources :users
+  map.resources :collaborators
   #map.logout '/session/destroy', :controller => :sessions, :action => :destroy
   # map.resource  :session
-  # map.resources :settings, :collection => {:email => :get, :users => :get}
+  map.resources :settings, :collection => {:email => :get, :users => :get}
  
   map.claim '/claim', :controller => :claim
   map.connect '/intro', :controller => :intro
