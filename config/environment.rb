@@ -63,8 +63,6 @@ Rails::Initializer.run do |config|
   # config.active_record.default_timezone = :utc
 
   config.action_mailer.default_url_options = {:host => (ENV['BUSHIDO_DOMAIN'] || "mockr")}
-  
-  if Devise::on_bushido?
-    config.action_mailer.delivery_method = :bushido
-  end
+
+  config.action_mailer.delivery_method = :bushido unless ENV['BUSHIDO_APP_KEY'].nil?
 end

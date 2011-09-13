@@ -1,3 +1,14 @@
+GIT
+  remote: git://github.com/HashNuke/bushidogem.git
+  revision: ac2ae5c3172cfe24eb849d3566842127cfc66c29
+  branch: akash_dev
+  specs:
+    bushido (0.0.35)
+      highline (>= 1.6.1)
+      json (>= 1.4.6)
+      orm_adapter (~> 0.0.3)
+      rest-client (>= 1.6.1)
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -16,11 +27,6 @@ GEM
       mime-types
       xml-simple
     builder (3.0.0)
-    bushido (0.0.35)
-      highline (>= 1.6.1)
-      json (>= 1.4.6)
-      orm_adapter (~> 0.0.3)
-      rest-client (>= 1.6.1)
     cocaine (0.1.0)
     devise (1.0.9)
       warden (~> 0.10.3)
@@ -29,7 +35,7 @@ GEM
       devise (>= 1.0.6)
       rubycas-client (>= 2.2.1)
     highline (1.6.2)
-    json (1.5.4)
+    json (1.6.0)
     mime-types (1.16)
     orm_adapter (0.0.5)
     paperclip (2.3.16)
@@ -63,7 +69,7 @@ PLATFORMS
 
 DEPENDENCIES
   aws-s3
-  bushido
+  bushido!
   devise (= 1.0.9)
   devise_bushido_authenticatable
   paperclip
