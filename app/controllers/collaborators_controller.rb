@@ -1,12 +1,14 @@
 class CollaboratorsController < ApplicationController
-  def create
-    begin
-      Bushido::User.invite(params[:email])
-    rescue => ex
-      flash[:notice] = "That user could not be added."
-    end
-    redirect_to collaborators_path
-  end
+
+  # TODO add condition in routes to disable this if on Bushido
+  #def create
+    #begin
+      #Bushido::User.invite(params[:email])
+    #rescue => ex
+      #flash[:notice] = "That user could not be added."
+    #end
+    #redirect_to collaborators_path
+  #end
 
   def index
     @users = User.all
