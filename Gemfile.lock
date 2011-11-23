@@ -10,7 +10,6 @@ GIT
 GIT
   remote: git://github.com/HashNuke/bushidogem.git
   revision: f404083acd9d4e6af60396485b69899f095c002a
-  branch: tryout
   specs:
     bushido (0.0.35)
       highline (>= 1.6.1)
@@ -40,7 +39,7 @@ GEM
     devise (1.0.9)
       warden (~> 0.10.3)
     factory_girl (1.2.4)
-    highline (1.6.2)
+    highline (1.6.8)
     hoe (2.12.3)
       rake (~> 0.8)
     json (1.6.1)
