@@ -1,0 +1,16 @@
+<h1>Editing letter</h1>
+
+<% form_for(@letter) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :payload %><br />
+    <%= f.text_area :payload %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @letter %> |
+<%= link_to 'Back', letters_path %>
