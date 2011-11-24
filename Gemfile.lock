@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/Bushido/bushidogem.git
-  revision: 8763a19d3d97bbc491158a8cec13de8f29ed22d4
+  revision: 59260389f14efe961b0758ae0eb955da92a51e20
   branch: email_routes
   specs:
     bushido (0.0.35)
