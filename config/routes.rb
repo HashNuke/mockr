@@ -1,4 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :letters
+
 
   map.resources :collaborators
   map.resources :comments, :collection => {:ajax_create => :post}
