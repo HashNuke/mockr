@@ -1,4 +1,15 @@
 GIT
+  remote: git://github.com/Bushido/bushidogem.git
+  revision: 4459a464d65a676d0099d361eab2252122808ddd
+  branch: email_routes
+  specs:
+    bushido (0.0.35)
+      highline (>= 1.6.1)
+      json (>= 1.4.6)
+      orm_adapter (~> 0.0.3)
+      rest-client (>= 1.6.1)
+
+GIT
   remote: git://github.com/Bushido/devise_cas_authenticatable.git
   revision: b76e04a13bd5ba63c4274b4ec8f941ff5a5eaaa8
   specs:
@@ -6,16 +17,6 @@ GIT
       devise
       devise (>= 1.0.6)
       rubycas-client (>= 2.2.1)
-
-GIT
-  remote: git://github.com/HashNuke/bushidogem.git
-  revision: f404083acd9d4e6af60396485b69899f095c002a
-  specs:
-    bushido (0.0.35)
-      highline (>= 1.6.1)
-      json (>= 1.4.6)
-      orm_adapter (~> 0.0.3)
-      rest-client (>= 1.6.1)
 
 GEM
   remote: http://rubygems.org/
@@ -43,7 +44,7 @@ GEM
     hoe (2.12.3)
       rake (~> 0.8)
     json (1.6.1)
-    mime-types (1.16)
+    mime-types (1.17.2)
     orm_adapter (0.0.5)
     paperclip (2.4.1)
       activerecord (>= 2.3.0)
