@@ -1,0 +1,1 @@
+Bushido.subscribe_to_events
