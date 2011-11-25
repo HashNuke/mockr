@@ -3,10 +3,8 @@ require 'bushido'
 module Bushido
   def self.subscribe_to_events
     ::Bushido::Data.listen("mail.received") do |event|
-      
-      letter = Letter.new
-      letter.payload = Time.now.to_s
-      letter.save
+      STDOUT.puts "=====MAIL RECEIVED===="
+      STDOUT.puts "#{event[:data].inspect}"
     end
   end
 end
